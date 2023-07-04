@@ -1,0 +1,68 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+body {
+    background: url(/images/pattern-bg-mobile.png) top / 100%  no-repeat;
+    display: grid;
+    justify-content: center;
+
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.input-container {
+    border: 1px solid black;
+    border-radius: 12px;
+    background: linear-gradient(to right, white 85%, black 15%);
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 5px 10px;
+}
+
+input {
+    margin-left: 3%;
+    width: 250px;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+button {
+    border: none; 
+    box-shadow: none;
+    border-radius: 10px;
+    height: 100%;
+    width: 35px;
+    background-color: black;
+}
+
+button:hover,
+img:hover,
+input:hover
+ {
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    background: url(/images/pattern-bg-desktop.png) top / 100% no-repeat;
+}

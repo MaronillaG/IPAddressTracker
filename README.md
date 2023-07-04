@@ -18,7 +18,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 
 ## Overview
-
+my goal:  - build an application using API connection. This is my first application that uses an API, in this case 2.. 
 ### The challenge
 
 Users should be able to:
@@ -35,13 +35,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: 
+- Live Site URL: 
 
 ## My process
 
+set up sematic html markup
 ### Built with
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
@@ -55,6 +55,10 @@ Users should be able to:
 ### What I learned
 
 Major learnings while working through this project: 
+
+more CSS stylings:
+  splitting the colour of a container using linear gradient.
+
 
 ### Continued development
 
