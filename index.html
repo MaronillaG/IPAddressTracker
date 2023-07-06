@@ -17,23 +17,30 @@
   crossorigin=""></script>
 </head>
 <body>
-  <h1>IP Address Tracker</h1>
-  <form id="input-container" class="input-container" action="javascript:void(0);" onsubmit="submitInput(event)">
-    <input type="text" placeholder="Search for any IP address or domain" name="query" id="search-Input">
-    <button type="submit"><img src="/images/icon-arrow.svg" alt="arrow"></button>
-  </form>
-  <div id="info-container" class="info-container">
-    <h6 class="text">IP Address</h6>
-    <p id="ip-address-input"class="input text"></p>
-    <h6 class="text">Location</h6>
-    <p id="location-input" class="input text"></p>
-    <h6 class="text">Timezone</h6>
-    <p id="timezone-input"class="input text"></p>
-    <h6 class="text">ISP</h6>
-    <p id="isp-input"class="input text"></p>
+  <div id="top-layer">
+    <h1>IP Address Tracker</h1>
+    <form id="input-container" class="input-container" action="javascript:void(0);" onsubmit="submitInput(event)">
+      <input type="text" placeholder="Search for any IP address or domain" name="query" id="search-Input">
+      <button type="submit"><img src="/images/icon-arrow.svg" alt="arrow"></button>
+    </form>
+    <div id="info-container" class="info-container">
+      <h6 class="text">IP Address</h6>
+      <p id="ip-address-input"class="input text"></p>
+      <h6 class="text">Location</h6>
+      <p id="location-input" class="input text"></p>
+      <h6 class="text">Timezone</h6>
+      <p id="timezone-input"class="input text"></p>
+      <h6 class="text">ISP</h6>
+      <p id="isp-input"class="input text"></p>
+    </div>
   </div>
 
-  <div id="map" class="map"></div>
+  <div id="bottom-layer">
+
+    <div id="map" class="map"></div>
+  </div>
+  
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
