@@ -7,7 +7,9 @@ const searchInput = document.querySelector('#search-Input');
 
 
 let ipAddress = userIP(); // generates user IP on first load
-let  IPDetailsAPI = `https://geo.ipify.org/api/v2/country,city?apiKey=at_zasg65eURDRUyBQh10yIyNfak5lYu&${ipAddress}` //generates url link.
+let workingKey = 'at_qtHPZ2eEtlEEEfFcPOe3ypzq4jAji';
+let oldKey = 'at_zasg65eURDRUyBQh10yIyNfak5lYu'
+let  IPDetailsAPI = `https://geo.ipify.org/api/v2/country,city?apiKey=${oldKey}&${ipAddress}` //generates url link.
 getDetails(IPDetailsAPI); //populates table at the start.
 
 // resetVals();
@@ -103,13 +105,3 @@ async function userIP() {
     console.log('user\'s IP on first load', data.ip);
     return data.ip
 }
-
-
-// window.addEventListener('resize', function() {
-//     //if window width is greater than 600px then replace 'mobile' to 'desktop' for the header.src
-//     const header = document.querySelector('#header');
-//     let img = 'http://127.0.0.1:5500/images/pattern-bg-mobile.png';
-//     let desktop = img.replace('mobile','desktop');
-    
-//     (window.innerWidth > 600) ? header.src = desktop : header.src = mobile;
-// });

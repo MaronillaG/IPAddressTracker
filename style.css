@@ -18,23 +18,26 @@ body {
 #bottom-layer {
     position: absolute;
     width: 100vw;
-    margin:0;
-    background-color: red;
+    /* margin:0; */
 }
 .header {
-    width: 100%;
-    max-height: 25%;
+    background-color: orange;
+    min-height: 250px;
+    width: auto;
+    background: no-repeat center/100% url('https://MaronillaG.github.io/IPAddressTracker/images/pattern-bg-mobile.png');
 }
 
 #map {
     min-height: 500px;
     width: 100%;
+    background-color: orange;
 }
 
 /* top layer */
 
 #top-layer {
     position: absolute;
+    z-index: 999;
     display: grid;
     justify-content: center;
     left: 50%;
@@ -55,7 +58,7 @@ h1 {
 }
 .input-container {
     height: 30px;
-    width: 80%;
+    width: 75%;
     border-radius: 12px;
     background: linear-gradient(to right, white 85%, black 15%);
     display: flex;
@@ -71,7 +74,6 @@ input {
     border: none;
     font-family: 'Rubik', sans-serif;
     font-size: 0.75rem;
-    color: rgb(178, 172, 173)
 }
 
 input:focus{
@@ -97,7 +99,7 @@ button:hover, input:hover {
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px;
-    width: 80%;
+    width: 75%;
 }
 
 
@@ -115,6 +117,7 @@ p {
     /* border: 1px solid; */
     font-weight: 500;
     margin: 2% auto 6%;
+    color: rgba(0, 0, 0, 0.742);
 }
 
 .info-container h6:first-child {
@@ -126,9 +129,10 @@ p {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     #top-layer, input {
         width: 80%;
+
     }
 
     .input-container {
@@ -178,13 +182,24 @@ p {
         width: 100%;
         margin: 0;
     }
-
+    .header {
+        background-color: orange;
+        min-height: 500px;
+        width: auto;
+        background: no-repeat top/100% url('https://MaronillaG.github.io/IPAddressTracker/images/pattern-bg-desktop.png');
+    }
+    #map {
+        position: absolute;
+        top: 25%;
+    }
 }
     
 .attribution { 
+    margin-bottom:10%;
+
+    z-index: 999;
     font-size: 11px; 
     text-align: center; 
-    visibility: hidden;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 

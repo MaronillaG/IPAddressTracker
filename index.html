@@ -18,7 +18,8 @@
 </head>
 <body>
   <div id="bottom-layer">
-    <img id="header" class="header" src="./images/pattern-bg-mobile.png"></img>
+    <div id="header" class="header"></div>
+    <!-- <img id="header" class="header" src="./images/pattern-bg-mobile.png"></img> -->
     <div id="map" class="map">MAP</div>
   </div>
 
@@ -26,7 +27,7 @@
     <h1>IP Address Tracker</h1>
     <form id="input-container" class="input-container" action="javascript:void(0);" onsubmit="submitInput(event)">
       <input type="text" placeholder="Search for any IP address or domain" name="query" id="search-Input">
-      <button type="submit"><img src="./images/icon-arrow.svg" alt="arrow"></button>
+      <button type="submit"><img class="button" src="./images/icon-arrow.svg" alt="arrow"></button>
     </form>
     <div id="info-container" class="info-container">
       <h6 class="text">IP Address</h6>
