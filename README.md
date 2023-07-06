@@ -35,26 +35,24 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/MaronillaG/IPAddressTracker
+- Live Site URL: https://maronillag.github.io/IPAddressTracker/
 
 ## My process
+Approach: began with HTML markup and css styling then javascript for API connection.
 
-set up sematic html markup
 ### Built with
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
 
 ### What I learned
 
 Major learnings while working through this project: 
+Key concepts: callback functions, promises, asynchronous functions, fetch().
+Working with 
 
 more CSS stylings:
   splitting the colour of a container using linear gradient.
@@ -65,12 +63,14 @@ more CSS stylings:
 Areas to continue focusing on in future projects. 
 
 ### Useful resources
-
+-Understanding fetch() and promises:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+    https://javascript.info/promise-basics
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Gillian](https://maronillag.github.io/Gillian-Maronilla-Portfolio/)
+- Frontend Mentor - [@MaronillaG](https://www.frontendmentor.io/profile/MaronillaG)
 
 
 ## Acknowledgments
