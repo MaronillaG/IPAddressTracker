@@ -17,28 +17,30 @@
   crossorigin=""></script>
 </head>
 <body>
+  <div id="bottom-layer">
+    <img id="header" class="header" src="./images/pattern-bg-mobile.png"></img>
+    <div id="map" class="map">MAP</div>
+  </div>
+
   <div id="top-layer">
     <h1>IP Address Tracker</h1>
     <form id="input-container" class="input-container" action="javascript:void(0);" onsubmit="submitInput(event)">
       <input type="text" placeholder="Search for any IP address or domain" name="query" id="search-Input">
-      <button type="submit"><img src="/images/icon-arrow.svg" alt="arrow"></button>
+      <button type="submit"><img src="./images/icon-arrow.svg" alt="arrow"></button>
     </form>
     <div id="info-container" class="info-container">
       <h6 class="text">IP Address</h6>
-      <p id="ip-address-input"class="input text"></p>
+      <p id="ip-address-input"class="input text">IPv4 address</p>
       <h6 class="text">Location</h6>
-      <p id="location-input" class="input text"></p>
+      <p id="location-input" class="input text">Region, city postcode</p>
       <h6 class="text">Timezone</h6>
-      <p id="timezone-input"class="input text"></p>
+      <p id="timezone-input"class="input text">UTC timezone</p>
       <h6 class="text">ISP</h6>
-      <p id="isp-input"class="input text"></p>
+      <p id="isp-input"class="input text">Service Provider</p>
     </div>
   </div>
 
-  <div id="bottom-layer">
 
-    <div id="map" class="map"></div>
-  </div>
   
 
   
