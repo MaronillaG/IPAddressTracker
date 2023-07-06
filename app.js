@@ -9,7 +9,7 @@ const searchInput = document.querySelector('#search-Input');
 let ipAddress = userIP(); // generates user IP on first load
 let workingKey = 'at_qtHPZ2eEtlEEEfFcPOe3ypzq4jAji';
 let oldKey = 'at_zasg65eURDRUyBQh10yIyNfak5lYu'
-let  IPDetailsAPI = `https://geo.ipify.org/api/v2/country,city?apiKey=${oldKey}&${ipAddress}` //generates url link.
+let  IPDetailsAPI = `https://geo.ipify.org/api/v2/country,city?apiKey=${workingKey}&${ipAddress}` //generates url link.
 getDetails(IPDetailsAPI); //populates table at the start.
 
 // resetVals();
@@ -30,7 +30,7 @@ function submitInput(event) {
     let regex = /.[a-z]+/ig;
     ipAddress = regex.test(clientInput)? `domain=${clientInput}` : ipAddress = `ipAddress=${clientInput}`;
 
-    IPDetailsAPI = `https://geo.ipify.org/api/v2/country,city?apiKey=at_zasg65eURDRUyBQh10yIyNfak5lYu&${ipAddress}`;
+    IPDetailsAPI = `https://geo.ipify.org/api/v2/country,city?apiKey=${workingKey}&${ipAddress}`;
     getDetails(IPDetailsAPI);
     console.log('this should be updated now',ipAddress);
     document.getElementById("input-container").reset();
@@ -66,14 +66,21 @@ async function getDetails(APIurl) {
 
     // map is loaded from start but with userIP via coordinates variable.
     let coordinates = [lat, long]
-    map = L.map('map').setView(coordinates, 14);
+    map = L.map('map', {
+        zoomControl: false,
+        })
+        .setView(coordinates, 14);
     const attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
     const tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
     const tiles = L.tileLayer(tileUrl, {attribution} );
 
     tiles.addTo(map);
-
-    const marker = L.marker(coordinates).addTo(map);
+    
+    const pin = L.icon({
+        iconUrl:'https://MaronillaG.github.io/IPAddressTracker/images/icon-location.svg',
+        iconSize: [38, 50]
+    })
+    const marker = L.marker(coordinates, {icon: pin}).addTo(map); // adding custom pin to map.
 
 }
 
